@@ -9,12 +9,16 @@ import {
   FileText,
   BarChart3,
   List,
-  Crown
+  Crown,
+  Home,
+  Send
 } from "lucide-react";
 
 const navigation = [
+  { name: "Главная", href: "/landing", icon: Home },
   { name: "Входящая лента", href: "/", icon: List },
   { name: "Дашборд KPI", href: "/dashboard", icon: BarChart3 },
+  { name: "Bitrix24", href: "/bitrix24", icon: Send },
   { name: "Генерация КП", href: "/proposals", icon: FileText },
   { name: "Аналитика", href: "/analytics", icon: TrendingUp },
 ];
@@ -33,10 +37,10 @@ export function Sidebar() {
     <div className="flex h-screen w-64 flex-col bg-card border-r border-border">
       <div className="flex h-16 items-center border-b border-border px-6">
         <div className="flex items-center gap-2">
-          <Crown className="h-8 w-8 text-primary" />
+          <img src="/lovable-uploads/5192a20b-0839-451b-a9c4-4876f373ddfe.png" alt="ITR Solutions" className="h-8 w-8" />
           <div>
-            <h1 className="text-lg font-bold text-foreground">Tender Platform</h1>
-            <p className="text-xs text-muted-foreground">Система управления тендерами</p>
+            <h1 className="text-sm font-bold text-foreground">ITR Solutions</h1>
+            <p className="text-xs text-muted-foreground">Tender Platform</p>
           </div>
         </div>
       </div>

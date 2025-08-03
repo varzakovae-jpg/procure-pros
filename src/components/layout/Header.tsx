@@ -14,7 +14,8 @@ export function Header() {
   return (
     <header className="flex h-16 items-center justify-between border-b border-border bg-background px-6">
       <div className="flex items-center gap-4">
-        <h2 className="text-lg font-semibold text-foreground">Система управления тендерами</h2>
+        <img src="/lovable-uploads/5192a20b-0839-451b-a9c4-4876f373ddfe.png" alt="ITR Solutions" className="h-8 w-8" />
+        <h2 className="text-lg font-semibold text-foreground">Tender Platform ITR Solutions</h2>
         <Badge variant="secondary" className="text-xs">
           MVP v1.0
         </Badge>

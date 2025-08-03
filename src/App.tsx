@@ -7,6 +7,8 @@ import { Sidebar } from "@/components/layout/Sidebar";
 import { Header } from "@/components/layout/Header";
 import TenderFeed from "./pages/TenderFeed";
 import Dashboard from "./pages/Dashboard";
+import Landing from "./pages/Landing";
+import Bitrix24 from "./pages/Bitrix24";
 import PlatformsPage from "./pages/admin/PlatformsPage";
 import KeywordsPage from "./pages/admin/KeywordsPage";
 import NotFound from "./pages/NotFound";
@@ -25,8 +27,10 @@ const App = () => (
             <Header />
             <main className="flex-1 overflow-y-auto p-6">
               <Routes>
+                <Route path="/landing" element={<Landing />} />
                 <Route path="/" element={<TenderFeed />} />
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/bitrix24" element={<Bitrix24 />} />
                 <Route path="/admin/platforms" element={<PlatformsPage />} />
                 <Route path="/admin/keywords" element={<KeywordsPage />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -1,11 +1,11 @@
 {
   "homepage": "https://varzakovae-jpg.github.io/procure-pros/",
-    "name": "vite_react_shadcn_ts",
-    "version": "0.0.0",
-    ...
+  "name": "vite_react_shadcn_ts",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build", 
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
